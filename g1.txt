@@ -1,0 +1,35 @@
+node
+{
+    stage('terraform')
+    {
+        echo "This is project infra using terraform.................."
+    }
+    stage('Commit')
+    {
+        echo "This is Code Download from GIT Project Repository.................."
+    }
+    stage('Build')
+    {
+        echo "This is Build project using maven.................."
+    }
+    stage('Test')
+    {
+        echo "This is Test project Implementation using Selenium................."
+    }
+    stage('integration')
+    {
+        echo "This is Build project using jenkins foe integration.................."
+    }
+    stage('Release')
+    {
+        echo "This is Delivery using Dcoker......................................"
+    }
+    stage('Monitor')
+    {
+        echo "This is Application Logs Monitorinig using tool Splunk............."
+    }
+    stage('report')
+    {
+        echo "This is project report using grafana.................."
+    }
+}
